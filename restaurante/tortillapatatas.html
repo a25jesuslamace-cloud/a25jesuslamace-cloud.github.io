@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Jesus Lama">
-    <meta name="description" content="Receta tradicional de tortilla de patatas española.">
-    <meta name="keywords" content="receta, tortilla, patatas, huevos, restaurante">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Receta tradicional de tortilla de patatas.">
+    <meta name="keywords" content="receta, tortilla, patatas, restaurante, resena">
     <title>Receta: Tortilla de Patatas Tradicional - Restaurante Sabor Tradicional</title>
 </head>
 <body>
@@ -54,6 +53,33 @@
             </p>
         </article>
 
+    </section>
+
+    <!-- FORMULARIO DE RESEÑA EN UN PLATO (PUNTO 2.3 Y DE LA RÚBRICA) -->
+    <section>
+        <h2>Escribe tu reseña para este plato</h2>
+        
+        <form action="#" method="get">
+            <p>
+                Plato: 
+                <select name="plato">
+                    <option value="Tortilla de Patatas Tradicional" selected>Tortilla de Patatas Tradicional</option>
+                    <option value="Croquetas de Jamón Ibérico">Croquetas de Jamón Ibérico</option>
+                    <option value="Tarta de Queso Cremosa">Tarta de Queso Cremosa</option>
+                </select>
+            </p>
+            <p>
+                Nombre del que realiza la reseña:<br>
+                <input type="text" name="nombre_autor">
+            </p>
+            <p>
+                Reseña del plato:<br>
+                <textarea name="resena" rows="4" cols="40"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar reseña">
+            </p>
+        </form>
     </section>
 
     <aside>

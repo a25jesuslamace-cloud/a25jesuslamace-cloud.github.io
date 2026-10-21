@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jesus Lama">
+    <meta name="description" content="Página con los dos formularios de la actividad 5.">
+    <meta name="keywords" content="formularios, inscripcion, cuestionario, informatica">
+    <title>Formularios - Proyecto de Desarrollo Web</title>
+</head>
+<body>
+
+<header>
+    <h1>Formularios del Proyecto</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Volver al Menú Principal del Proyecto</a></li>
+        <li><a href="../restaurante/index.html">Ir al Restaurante</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- FORMULARIO 1: HOJA DE INSCRIPCION -->
+    <section>
+        <h2>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+        
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <p>
+                    Nombre: <input type="text" name="nombre">
+                    Apellidos: <input type="text" name="apellidos">
+                    DNI: <input type="text" name="dni">
+                </p>
+                <p>
+                    Localidad de Nacimiento: <input type="text" name="localidad">
+                    Provincia: 
+                    <select name="provincia">
+                        <option value="Huelva">Huelva</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Cadiz">Cádiz</option>
+                        <option value="Cordoba">Córdoba</option>
+                    </select>
+                    Fecha de Nacimiento: <input type="text" name="fecha_nac" placeholder="dd / mm / aaaa">
+                </p>
+                <p>
+                    Dirección: <input type="text" name="direccion">
+                    Código Postal: <input type="text" name="cp">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                
+                <p>
+                    <input type="radio" name="acceso" value="directo"> Directo
+                </p>
+                <ul>
+                    <li>Bachillerato Log Modalidad: <input type="text" name="bachillerato"></li>
+                    <li><input type="radio" name="directo_tipo" value="experimental"> Experimental</li>
+                    <li>COU Opción: <input type="text" name="cou"></li>
+                    <li><input type="radio" name="directo_tipo" value="fp2"> FP2</li>
+                    <li>Otros (especifique): <input type="text" name="otros_acceso"></li>
+                </ul>
+                <p>
+                    <input type="radio" name="acceso" value="prueba_libre"> Prueba Libre
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos Adjuntados</legend>
+                
+                <p>
+                    <input type="checkbox" name="doc_dni"> Fotocopia DNI
+                    <input type="checkbox" name="doc_certificado"> Certificado Académico
+                </p>
+                <p>
+                    <input type="checkbox" name="doc_otros"> Otros documentos (especifique): 
+                    <input type="text" name="doc_otros_texto">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar datos">
+            </p>
+        </form>
+    </section>
+
+    <br><hr><br>
+
+    <!-- FORMULARIO 2: CUESTIONARIO CLUB AMIGOS DE LA INFORMÁTICA -->
+    <section>
+        <h2>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h2>
+        
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <p>Nombre: <input type="text" name="nombre"></p>
+                <p>Domicilio: <input type="text" name="domicilio" placeholder="<calle, numero y localidad>"></p>
+                <p>
+                    País de origen: 
+                    <select name="pais">
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Portugal">Portugal</option>
+                    </select>
+                </p>
+                <p>Fecha de nacimiento: <input type="text" name="fecha_nac" placeholder="dd / mm / aaaa"></p>
+                <p>Correo electrónico: <input type="text" name="email"></p>
+                <p>Teléfono: <input type="text" name="telefono"></p>
+                <p>
+                    Estado civil: 
+                    <input type="radio" name="estado_civil" value="soltero"> Solter@
+                    <input type="radio" name="estado_civil" value="casado"> Casad@
+                    <input type="radio" name="estado_civil" value="separado"> Separad@
+                    <input type="radio" name="estado_civil" value="viudo"> Viud@
+                </p>
+                <p>
+                    Sexo: 
+                    <input type="radio" name="sexo" value="hombre"> Hombre
+                    <input type="radio" name="sexo" value="mujer"> Mujer
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otra información de interés</legend>
+                
+                <p>
+                    Seleccione los componentes electrónicos con los que habitualmente trabajas:<br>
+                    <select name="componentes" multiple size="4">
+                        <option value="movil">Móvil</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="ordenador">Ordenador</option>
+                        <option value="ebook">Ebook</option>
+                    </select>
+                </p>
+                <p>
+                    Seleccione tus actividades favoritas:<br>
+                    <input type="checkbox" name="actividad" value="deporte"> Hacer deporte
+                    <input type="checkbox" name="actividad" value="amigos"> Salir con mis amigos
+                    <input type="checkbox" name="actividad" value="series"> Ver series, pelis,...<br>
+                    <input type="checkbox" name="actividad" value="senderismo"> Realizar rutas de senderismo
+                    <input type="checkbox" name="actividad" value="cine"> Ir al cine
+                    <input type="checkbox" name="actividad" value="musica"> Escuchar música
+                </p>
+                <p>
+                    Explique brevemente el motivo por el que desea ingresar en nuestro club:<br>
+                    <textarea name="motivo" rows="4" cols="50"></textarea>
+                </p>
+                <p>
+                    Elige o escribe tu peli favorita: <input type="text" name="peli_favorita">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </p>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Jesus Lama - Proyecto Desarrollo Web</p>
+</footer>
+
+</body>
+</html>
